@@ -12,6 +12,7 @@
   <AppDomains>
     <AppDomain>https://www.contoso.com</AppDomain>
     <AppDomain>https://appsforoffice.microsoft.com</AppDomain>
+    <AppDomain>https://mps-test-phi.vercel.app</AppDomain>
   </AppDomains>
   <Hosts>
     <Host Name="Workbook"/>

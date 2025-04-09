@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
+  <Id>f11ed654-b9b3-4e88-8fc0-1db7a956b261</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>Contoso</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="MPS"/>
+  <Description DefaultValue="欢迎使用MPS"/>
+  <IconUrl DefaultValue="https://xiayutian.oss-cn-hangzhou.aliyuncs.com/dist/assets/icon-32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://xiayutian.oss-cn-hangzhou.aliyuncs.com/dist/assets/icon-64.png"/>
+  <SupportUrl DefaultValue="https://www.contoso.com/help"/>
+  <AppDomains>
+    <AppDomain>https://www.contoso.com</AppDomain>
+    <AppDomain>https://appsforoffice.microsoft.com</AppDomain>
+  </AppDomains>
+  <Hosts>
+    <Host Name="Workbook"/>
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://xiayutian.oss-cn-hangzhou.aliyuncs.com/dist/commands.html"/>
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+  <Requirements>
+    <Sets DefaultMinVersion="1.1">
+      <Set Name="SharedRuntime" MinVersion="1.1"/>
+    </Sets>
+  </Requirements>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <Hosts>
+      <Host xsi:type="Workbook">
+        <Runtimes>
+          <Runtime resid="Commands.Url" lifetime="long" />
+        </Runtimes>
+        <DesktopFormFactor>
+          <FunctionFile resid="Commands.Url"/>
+          <ExtensionPoint xsi:type="PrimaryCommandSurface">
+            <CustomTab id="CustomTab">
+              <Group id="CustomGroup">
+                <Label resid="CustomGroup.Label"/>
+                <Icon>
+                  <bt:Image size="16" resid="Icon.16x16"/>
+                  <bt:Image size="32" resid="Icon.32x32"/>
+                  <bt:Image size="80" resid="Icon.80x80"/>
+                </Icon>
+                <Control xsi:type="Button" id="CustomButton1">
+                  <Label resid="CustomButton1.Label"/>
+                  <Supertip>
+                    <Title resid="CustomButton1.Label"/>
+                    <Description resid="CustomButton1.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16x16"/>
+                    <bt:Image size="32" resid="Icon.32x32"/>
+                    <bt:Image size="80" resid="Icon.80x80"/>
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>onLogin</FunctionName>
+                  </Action>
+                  <Enabled>true</Enabled>
+                </Control>
+              </Group>
+              <Group id="DataOperationGroup">
+                <Label resid="DataOperationGroup.Label"/>
+                <Icon>
+                  <bt:Image size="16" resid="Icon.16x16"/>
+                  <bt:Image size="32" resid="Icon.32x32"/>
+                  <bt:Image size="80" resid="Icon.80x80"/>
+                </Icon>
+                <Control xsi:type="Button" id="CustomButton2">
+                  <Label resid="CustomButton2.Label"/>
+                  <Supertip>
+                    <Title resid="CustomButton2.Label"/>
+                    <Description resid="CustomButton2.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16x16"/>
+                    <bt:Image size="32" resid="Icon.32x32"/>
+                    <bt:Image size="80" resid="Icon.80x80"/>
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>onSelectFactory</FunctionName>
+                  </Action>
+                  <Enabled>true</Enabled>
+                </Control>
+                <Control xsi:type="Button" id="CustomButton3">
+                  <Label resid="CustomButton3.Label"/>
+                  <Supertip>
+                    <Title resid="CustomButton3.Label"/>
+                    <Description resid="CustomButton3.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16x16"/>
+                    <bt:Image size="32" resid="Icon.32x32"/>
+                    <bt:Image size="80" resid="Icon.80x80"/>
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>thirdAction</FunctionName>
+                  </Action>
+                  <Enabled>true</Enabled>
+                </Control>
+                <Control xsi:type="Button" id="CustomButton4">
+                  <Label resid="CustomButton4.Label"/>
+                  <Supertip>
+                    <Title resid="CustomButton4.Label"/>
+                    <Description resid="CustomButton4.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16x16"/>
+                    <bt:Image size="32" resid="Icon.32x32"/>
+                    <bt:Image size="80" resid="Icon.80x80"/>
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>fourthAction</FunctionName>
+                  </Action>
+                  <Enabled>true</Enabled>
+                </Control>
+                <Control xsi:type="Button" id="CustomButton5">
+                  <Label resid="CustomButton5.Label"/>
+                  <Supertip>
+                    <Title resid="CustomButton5.Label"/>
+                    <Description resid="CustomButton5.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16x16"/>
+                    <bt:Image size="32" resid="Icon.32x32"/>
+                    <bt:Image size="80" resid="Icon.80x80"/>
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>fifthAction</FunctionName>
+                  </Action>
+                  <Enabled>true</Enabled>
+                </Control>
+                <Control xsi:type="Button" id="CustomButton6">
+                  <Label resid="CustomButton6.Label"/>
+                  <Supertip>
+                    <Title resid="CustomButton6.Label"/>
+                    <Description resid="CustomButton6.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16x16"/>
+                    <bt:Image size="32" resid="Icon.32x32"/>
+                    <bt:Image size="80" resid="Icon.80x80"/>
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>sixthAction</FunctionName>
+                  </Action>
+                  <Enabled>true</Enabled>
+                </Control>
+                <Control xsi:type="Button" id="CustomButton7">
+                  <Label resid="CustomButton7.Label"/>
+                  <Supertip>
+                    <Title resid="CustomButton7.Label"/>
+                    <Description resid="CustomButton7.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16x16"/>
+                    <bt:Image size="32" resid="Icon.32x32"/>
+                    <bt:Image size="80" resid="Icon.80x80"/>
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>seventhAction</FunctionName>
+                  </Action>
+                  <Enabled>true</Enabled>
+                </Control>
+                <Control xsi:type="Button" id="CustomButton9">
+                  <Label resid="CustomButton9.Label"/>
+                  <Supertip>
+                    <Title resid="CustomButton9.Label"/>
+                    <Description resid="CustomButton9.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16x16"/>
+                    <bt:Image size="32" resid="Icon.32x32"/>
+                    <bt:Image size="80" resid="Icon.80x80"/>
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>ninthAction</FunctionName>
+                  </Action>
+                  <Enabled>true</Enabled>
+                </Control>
+                <Control xsi:type="Button" id="CustomButton10">
+                  <Label resid="CustomButton10.Label"/>
+                  <Supertip>
+                    <Title resid="CustomButton10.Label"/>
+                    <Description resid="CustomButton10.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16x16"/>
+                    <bt:Image size="32" resid="Icon.32x32"/>
+                    <bt:Image size="80" resid="Icon.80x80"/>
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>tenthAction</FunctionName>
+                  </Action>
+                  <Enabled>true</Enabled>
+                </Control>
+                <Control xsi:type="Button" id="CustomButton11">
+                  <Label resid="CustomButton11.Label"/>
+                  <Supertip>
+                    <Title resid="CustomButton11.Label"/>
+                    <Description resid="CustomButton11.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16x16"/>
+                    <bt:Image size="32" resid="Icon.32x32"/>
+                    <bt:Image size="80" resid="Icon.80x80"/>
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>eleventhAction</FunctionName>
+                  </Action>
+                  <Enabled>true</Enabled>
+                </Control>
+              </Group>
+              <Group id="LogoutGroup">
+                <Label resid="LogoutGroup.Label"/>
+                <Icon>
+                  <bt:Image size="16" resid="Icon.16x16"/>
+                  <bt:Image size="32" resid="Icon.32x32"/>
+                  <bt:Image size="80" resid="Icon.80x80"/>
+                </Icon>
+                <Control xsi:type="Button" id="LogoutButton">
+                  <Label resid="LogoutButton.Label"/>
+                  <Supertip>
+                    <Title resid="LogoutButton.Label"/>
+                    <Description resid="LogoutButton.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16x16"/>
+                    <bt:Image size="32" resid="Icon.32x32"/>
+                    <bt:Image size="80" resid="Icon.80x80"/>
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>onLogout</FunctionName>
+                  </Action>
+                  <Enabled>true</Enabled>
+                </Control>
+              </Group>
+              <Label resid="CustomTab.Label"/>
+            </CustomTab>
+          </ExtensionPoint>
+        </DesktopFormFactor>
+      </Host>
+    </Hosts>
+    <Resources>
+      <bt:Images>
+        <bt:Image id="Icon.16x16" DefaultValue="https://xiayutian.oss-cn-hangzhou.aliyuncs.com/dist/assets/icon-16.png"/>
+        <bt:Image id="Icon.32x32" DefaultValue="https://xiayutian.oss-cn-hangzhou.aliyuncs.com/dist/assets/icon-32.png"/>
+        <bt:Image id="Icon.80x80" DefaultValue="https://xiayutian.oss-cn-hangzhou.aliyuncs.com/dist/assets/icon-80.png"/>
+      </bt:Images>
+      <bt:Urls>
+        <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812"/>
+        <bt:Url id="Commands.Url" DefaultValue="https://xiayutian.oss-cn-hangzhou.aliyuncs.com/dist/commands.html"/>
+      </bt:Urls>
+      <bt:ShortStrings>
+        <bt:String id="GetStarted.Title" DefaultValue="欢迎使用MPS"/>
+        <bt:String id="CustomGroup.Label" DefaultValue="系统">
+          <bt:Override Locale="zh-CN" Value="操作"/>
+        </bt:String>
+        <bt:String id="DataOperationGroup.Label" DefaultValue="数据操作">
+          <bt:Override Locale="zh-CN" Value="数据操作"/>
+        </bt:String>
+        <bt:String id="LogoutGroup.Label" DefaultValue="账户">
+          <bt:Override Locale="zh-CN" Value="账户"/>
+        </bt:String>
+        <bt:String id="CustomTab.Label" DefaultValue="MPS">
+          <bt:Override Locale="zh-CN" Value="MPS"/>
+        </bt:String>
+        <bt:String id="CustomButton1.Label" DefaultValue="登录">
+          <bt:Override Locale="zh-CN" Value="登录"/>
+        </bt:String>
+        <bt:String id="LogoutButton.Label" DefaultValue="退出登录">
+          <bt:Override Locale="zh-CN" Value="退出登录"/>
+        </bt:String>
+        <bt:String id="CustomButton2.Label" DefaultValue="筛选">
+          <bt:Override Locale="zh-CN" Value="选择工厂"/>
+        </bt:String>
+        <bt:String id="CustomButton3.Label" DefaultValue="更新工厂日历"/>
+        <bt:String id="CustomButton4.Label" DefaultValue="更新客户日历"/>
+        <bt:String id="CustomButton5.Label" DefaultValue="下载主数据"/>
+        <bt:String id="CustomButton6.Label" DefaultValue="物料主数据&amp;库存"/>
+        <bt:String id="CustomButton7.Label" DefaultValue="产线班次"/>
+        <bt:String id="CustomButton8.Label" DefaultValue="爬坡曲线"/>
+        <bt:String id="CustomButton9.Label" DefaultValue="KSK BOM"/>
+        <bt:String id="CustomButton10.Label" DefaultValue="保存当前版本"/>
+        <bt:String id="CustomButton11.Label" DefaultValue="生产计划"/>
+        <bt:String id="CustomButton1.Tooltip" DefaultValue="Login to the system">
+          <bt:Override Locale="zh-CN" Value="登录系统"/>
+        </bt:String>
+        <bt:String id="LogoutButton.Tooltip" DefaultValue="Logout from the system">
+          <bt:Override Locale="zh-CN" Value="退出系统"/>
+        </bt:String>
+        <bt:String id="CustomButton2.Tooltip" DefaultValue="Select factory for data operations">
+          <bt:Override Locale="zh-CN" Value="选择工厂进行数据操作"/>
+        </bt:String>
+      </bt:ShortStrings>
+      <bt:LongStrings>
+        <bt:String id="GetStarted.Description" DefaultValue="MPS系统加载成功"/>
+        <bt:String id="CustomButton1.Tooltip" DefaultValue="点击登录"/>
+        <bt:String id="LogoutButton.Tooltip" DefaultValue="点击退出登录"/>
+        <bt:String id="CustomButton2.Tooltip" DefaultValue="点击进行数据筛选"/>
+        <bt:String id="CustomButton3.Tooltip" DefaultValue="点击更新工厂日历"/>
+        <bt:String id="CustomButton4.Tooltip" DefaultValue="点击更新客户日历"/>
+        <bt:String id="CustomButton5.Tooltip" DefaultValue="点击下载主数据"/>
+        <bt:String id="CustomButton6.Tooltip" DefaultValue="点击查看物料主数据和库存"/>
+        <bt:String id="CustomButton7.Tooltip" DefaultValue="点击查看产线班次"/>
+        <bt:String id="CustomButton8.Tooltip" DefaultValue="点击查看爬坡曲线"/>
+        <bt:String id="CustomButton9.Tooltip" DefaultValue="点击查看KSK BOM"/>
+        <bt:String id="CustomButton10.Tooltip" DefaultValue="点击保存当前版本"/>
+        <bt:String id="CustomButton11.Tooltip" DefaultValue="点击查看生产计划"/>
+      </bt:LongStrings>
+    </Resources>
+  </VersionOverrides>
+</OfficeApp>
